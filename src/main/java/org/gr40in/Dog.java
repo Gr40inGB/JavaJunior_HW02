@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Dog extends Animal {
 
-    GrrGrrLevel grrGrrLevel;
+    public GrrGrrLevel grrGrrLevel;
 
     public void makePurr() {
         switch (grrGrrLevel) {

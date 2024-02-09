@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Cat extends Animal {
 
-    PurrpurrLevel purrLevel;
+    protected PurrpurrLevel purrLevel;
 
     public void makePurr() {
         switch (purrLevel) {
