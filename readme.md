@@ -38,8 +38,12 @@ public class App {
     public static String getInformationAboutObject(Object object) throws IllegalAccessException {
         StringBuilder result = new StringBuilder();
         Class<?> clazz = object.getClass();
-        result.append(clazz.getSimpleName()).append(" (").append(clazz.getName()).append(")").append(System.lineSeparator());
-        result.append(getFieldsInfoFromObject(object, clazz));
+        result
+                .append(clazz.getSimpleName())
+                .append(" (").append(clazz.getName())
+                .append(")")
+                .append(System.lineSeparator())
+                .append(getFieldsInfoFromObject(object, clazz));
         Class<?> parent = clazz.getSuperclass();
         while (parent != null) {
             result.append(getFieldsInfoFromObject(object, parent));
